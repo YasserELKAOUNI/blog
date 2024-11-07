@@ -1,0 +1,461 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Transformer Series: Introduction - Blog de Yasser</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Yasser EL Kaouni">
+  
+  <meta property="article:author" content="Yasser EL Kaouni">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Blog de Yasser ">
+<meta property="og:title" content="Transformer Series: Introduction">
+<meta property="og:url" content="http://localhost:4000/deep-learning/2024/09/27/transformer-series-introduction.html">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2024-09-27T11:00:00+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/deep-learning/2024/09/27/transformer-series-introduction.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Blog de Yasser  Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Blog de Yasser 
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Accueil</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">À propos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/deep-learning/">Deep Learning</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/thoughts/">Réflexions</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Tous les Articles</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpeg" alt="Yasser EL Kaouni" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Yasser EL Kaouni</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Passionné par l’IA, le deep learning et le data engineering, je suis diplômé en mathématiques appliquées, statistiques et ML pour les données du vivant.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">France</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/YasserELKAOUNI" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/yasser-elkaouni/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Transformer Series: Introduction">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2024-09-27T11:00:00+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Transformer Series: Introduction
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="/assets/images/images_posts/Transformer_series/the_road_to_transformers.png" alt="The Road to Transformers" /></p>
+
+<p>J’entame une série d’articles sur l’architecture des <strong>transformers</strong>. Aujourd’hui, ce paradigme dominant en <strong>apprentissage profond</strong> est omniprésent dans tous les aspects structurant notre rapport à la technologie et à l’intelligence artificielle. <strong>Inventé en 2017</strong> avec le papier <em>“Attention Is All You Need”</em><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, les transformers soutiennent les systèmes de recommandation des plateformes que nous utilisons au quotidien. Ils sont à la base des percées récentes en <strong>traduction automatique</strong> (comme <strong>DeepL</strong>) et révolutionnent même la recherche fondamentale en <strong>biotechnologie</strong>, avec des avancées telles qu’<strong>AlphaFold</strong>.</p>
+
+<p>Il est donc absolument nécessaire de consacrer cette série d’articles à l’étude approfondie de cette architecture, toujours trop peu abordée dans les <strong>cursus académiques en France</strong>.</p>
+
+<h2 id="plan-de-la-série">Plan de la série</h2>
+
+<h3 id="1-des-rnn-aux-mécanismes-dattention-à-venir">1. <a href="#">Des RNN aux mécanismes d’attention</a> <em>(à venir)</em></h3>
+<p>Dans ce premier article, nous reviendrons sur l’évolution des réseaux de neurones récurrents (RNN) vers les mécanismes d’attention qui forment la base des transformers.</p>
+
+<h3 id="2-attention-is-all-you-need-à-venir">2. <a href="#">Attention Is All You Need</a> <em>(à venir)</em></h3>
+<p>Nous plongerons dans l’article fondateur de 2017, en analysant ses idées révolutionnaires et la manière dont il a redéfini le domaine du <strong>NLP</strong> (Natural Language Processing).</p>
+
+<h3 id="3-les-transformers-aujourdhui-et-demain-à-venir">3. <a href="#">Les Transformers aujourd’hui et demain</a> <em>(à venir)</em></h3>
+<p>Exploration des applications modernes des transformers, de <strong>DeepL</strong> à <strong>GPT-2</strong>, et des futurs développements dans des domaines comme la vision par ordinateur avec <strong>ViT</strong>.</p>
+
+<h3 id="4-lentraînement-des-transformers-à-venir">4. <a href="#">L’entraînement des Transformers</a> <em>(à venir)</em></h3>
+<p>Un tutoriel pratique sur l’entraînement de votre propre modèle transformer à partir de zéro.</p>
+
+<h3 id="5-deux-variantes-populaires--bert-et-gpt-à-venir">5. <a href="#">Deux variantes populaires : BERT et GPT</a> <em>(à venir)</em></h3>
+<p>Focus sur deux des modèles les plus influents issus de l’architecture transformer : <strong>BERT</strong> (Bidirectional Encoder Representations from Transformers) et <strong>GPT</strong> (Generative Pre-trained Transformer).</p>
+
+<h3 id="6-quelques-aspects-de-lalgorithme-dalphafold-à-venir">6. <a href="#">Quelques aspects de l’algorithme d’AlphaFold</a> <em>(à venir)</em></h3>
+<p>Discussion sur l’impact d’<strong>AlphaFold</strong> dans la biotechnologie et comment les transformers ont permis de résoudre des problèmes complexes dans la prédiction des structures protéiques.</p>
+
+<h2 id="notes-de-bas-de-page">Notes de bas de page</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., … &amp; Polosukhin, I. (2017). <em>Attention is all you need.</em> In Advances in Neural Information Processing Systems (pp. 5998-6008). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ai" class="page__taxonomy-item" rel="tag">AI</a><span class="sep">, </span>
+    
+      <a href="/tags/#nlp" class="page__taxonomy-item" rel="tag">NLP</a><span class="sep">, </span>
+    
+      <a href="/tags/#transformers" class="page__taxonomy-item" rel="tag">Transformers</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#deep-learning" class="page__taxonomy-item" rel="tag">deep-learning</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-09-27T11:00:00+02:00">September 27, 2024</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Transformer+Series%3A+Introduction%20http%3A%2F%2Flocalhost%3A4000%2Fdeep-learning%2F2024%2F09%2F27%2Ftransformer-series-introduction.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdeep-learning%2F2024%2F09%2F27%2Ftransformer-series-introduction.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdeep-learning%2F2024%2F09%2F27%2Ftransformer-series-introduction.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/YasserELKAOUNI" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/yasser-elkaouni/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Blog de Yasser . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

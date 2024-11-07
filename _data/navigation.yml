@@ -1,0 +1,11 @@
+main:
+  - title: "Accueil"
+    url: /
+  - title: "À propos"
+    url: /about/
+  - title: "Deep Learning"
+    url: /categories/deep-learning/
+  - title: "Réflexions"
+    url: /categories/thoughts/
+  - title: "Tous les Articles"
+    url: /posts/

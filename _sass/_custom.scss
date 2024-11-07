@@ -1,0 +1,23 @@
+
+body {
+  font-family: "Computer Modern", Georgia, Times, serif;
+  line-height: 1.6;
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.page__content {
+  p {
+    margin-bottom: 1.5em;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+    color: #333;
+  }
+}
+
+.masthead {
+  background-color: transparent;
+}
