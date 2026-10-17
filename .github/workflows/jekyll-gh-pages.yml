@@ -43,6 +43,7 @@ jobs:
           } 2>&1 | tee "$RUNNER_TEMP/jekyll-build.log"
         env:
           JEKYLL_ENV: production
+          PAGES_REPO_NWO: ${{ github.repository }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
       - name: Report build failure
