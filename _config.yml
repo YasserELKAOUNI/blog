@@ -1,15 +1,18 @@
-minimal_mistakes_skin: "contrast"  # Change from "sunrise" to "contrast"locale: "fr-FR"
-title: "Blog de Yasser "
+minimal_mistakes_skin: "default"
+locale: "fr-FR"
+date_format: "%d.%m.%Y"
+title: "Blog de Yasser"
 email: "yasserkaouni@gmail.com"
 description: "Explorations en mathématiques, statistiques et IA appliquées aux sciences du vivant"
 url: "https://blog.yasserelkaouni.github.io"
 baseurl: ""
-github_username: "YasserELKAONUI"
+github_username: "YasserELKAOUNI"
 
 
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# Minimal Mistakes 4.24.0, pinned to the peeled release commit.
+remote_theme: "mmistakes/minimal-mistakes@00fa7be38b5e57c6539d3986b2168ea7b57bc67a"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -52,8 +55,8 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
-      related: true
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"

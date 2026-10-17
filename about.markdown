@@ -4,7 +4,7 @@ title: "À propos"
 permalink: /about/
 ---
 
-# Yasser EL KAOUNI
+## Yasser EL KAOUNI
 
 Passionné d'intelligence artificielle en particulier l'apprentissage profond. Avec une solide formation académique et une expérience en Data Engineering, je partage ici mes réflexions, découvertes et projets dans ces champs . 
 

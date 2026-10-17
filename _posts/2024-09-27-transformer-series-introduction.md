@@ -2,6 +2,7 @@
 layout: single
 title: "Transformer Series: Introduction"
 date: 2024-09-27 10:00:00 +0100
+excerpt: "Des mécanismes d’attention aux applications modernes : une introduction à la série consacrée aux transformers, et aux idées qui structurent l’apprentissage profond."
 categories: 
   - deep-learning
 tags:
@@ -10,7 +11,7 @@ tags:
   - AI
 ---
 
-![The Road to Transformers](/assets/images/images_posts/Transformer_series/the_road_to_transformers.png)
+<img src="{{ '/assets/images/images_posts/Transformer_series/the_road_to_transformers.png' | relative_url }}" alt="The Road to Transformers" width="1792" height="1024" loading="lazy" decoding="async">
 
 J'entame une série d'articles sur l'architecture des **transformers**. Aujourd'hui, ce paradigme dominant en **apprentissage profond** est omniprésent dans tous les aspects structurant notre rapport à la technologie et à l'intelligence artificielle. **Inventé en 2017** avec le papier *"Attention Is All You Need"*[^1], les transformers soutiennent les systèmes de recommandation des plateformes que nous utilisons au quotidien. Ils sont à la base des percées récentes en **traduction automatique** (comme **DeepL**) et révolutionnent même la recherche fondamentale en **biotechnologie**, avec des avancées telles qu'**AlphaFold**.
 

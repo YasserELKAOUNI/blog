@@ -1,13 +1,7 @@
 ---
 layout: home
-author_profile: true
-header:
-  overlay_image: "/assets/images/Acropolis_Impressionist_Art.webp"
-  overlay_filter: 0.5
-  caption: "Bienvenue sur mon blog"
-  actions:
-    - label: "En savoir plus"
-      url: "/about/"
+title: "Mathématiques, données & intelligence artificielle."
+author_profile: false
 ---
 
-Bienvenue sur mon blog ! 
+Bienvenue sur mon blog. J’explore les mathématiques, les statistiques et l’IA appliquées aux sciences du vivant, avec un goût pour les idées claires et les mécanismes qui les rendent possibles.

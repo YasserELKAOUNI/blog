@@ -2,7 +2,7 @@
 title: Réflexions
 layout: category
 permalink: /categories/thoughts/
-taxonomy: Thoughts
+taxonomy: thoughts
 ---
 
 Mes réflexions sur divers sujets.

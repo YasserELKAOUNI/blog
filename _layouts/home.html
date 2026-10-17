@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<main id="main" class="home-main">
+  <section class="home-intro" aria-labelledby="page-title">
+    <p class="intro-label">Le carnet de Yasser EL Kaouni</p>
+    <h1 id="page-title">{{ page.title | escape }}</h1>
+    <div class="intro-description">{{ content }}</div>
+    <a class="intro-link" href="{{ '/about/' | relative_url }}">À propos de ce carnet <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="home-posts" aria-labelledby="recent-posts">
+    <div class="section-heading">
+      <h2 id="recent-posts">Derniers articles</h2>
+      <a href="{{ '/all-posts/' | relative_url }}">Tous les articles <span aria-hidden="true">→</span></a>
+    </div>
+    {% for post in site.posts %}
+      <article class="post-preview">
+        <p class="post-preview__meta">{{ post.date | date: '%d.%m.%Y' }} <span aria-hidden="true">·</span> {{ post.categories | join: ' / ' | replace: '-', ' ' }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.excerpt | markdownify | strip_html | strip | truncatewords: 42 }}</p>
+        <a class="post-preview__link" href="{{ post.url | relative_url }}" aria-label="Lire {{ post.title | escape }}">Lire l’article <span aria-hidden="true">→</span></a>
+      </article>
+    {% endfor %}
+  </section>
+</main>
