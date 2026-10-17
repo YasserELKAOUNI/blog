@@ -34,7 +34,9 @@ jobs:
         with:
           enablement: false
       - name: Build site
+        shell: bash
         run: |
+          set -euo pipefail
           {
             ruby -ryaml -e 'File.write(ARGV[0], {"url" => ENV.fetch("PAGES_ORIGIN")}.to_yaml)' "$RUNNER_TEMP/pages-config.yml"
             bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/pages-config.yml" --baseurl "$PAGES_BASE_PATH"
