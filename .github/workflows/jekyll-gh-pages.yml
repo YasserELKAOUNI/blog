@@ -35,12 +35,20 @@ jobs:
           enablement: false
       - name: Build site
         run: |
-          ruby -ryaml -e 'File.write(ARGV[0], {"url" => ENV.fetch("PAGES_ORIGIN")}.to_yaml)' "$RUNNER_TEMP/pages-config.yml"
-          bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/pages-config.yml" --baseurl "$PAGES_BASE_PATH"
+          {
+            ruby -ryaml -e 'File.write(ARGV[0], {"url" => ENV.fetch("PAGES_ORIGIN")}.to_yaml)' "$RUNNER_TEMP/pages-config.yml"
+            bundle exec jekyll build --config "_config.yml,$RUNNER_TEMP/pages-config.yml" --baseurl "$PAGES_BASE_PATH"
+          } 2>&1 | tee "$RUNNER_TEMP/jekyll-build.log"
         env:
           JEKYLL_ENV: production
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+      - name: Report build failure
+        if: failure()
+        run: |
+          if [ -f "$RUNNER_TEMP/jekyll-build.log" ]; then
+            ruby -e 'puts "::error::" + File.read(ARGV[0]).lines.last(30).join.gsub("%", "%25").gsub("\r", "%0D").gsub("\n", "%0A")' "$RUNNER_TEMP/jekyll-build.log"
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
 
